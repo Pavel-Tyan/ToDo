@@ -7,26 +7,28 @@ interface TodoItem {
 }
 
 interface TodoListState {
-  todos: TodoItem[];
+  todosList: TodoItem[];
 }
 
 const initialState: TodoListState = {
-  todos: [],
+  todosList: [],
 };
 
 export const todoSlice = createSlice({
-  name: "todo",
+  name: "todos",
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction<string>) => {
-      state.todos.push({
+      state.todosList.push({
         text: action.payload,
         id: nanoid(),
       });
     },
     removeTodo: (state, action: PayloadAction<string>) => {
-      const index = state.todos.findIndex((task) => task.id === action.payload);
-      state.todos.splice(index, 1);
+      const index = state.todosList.findIndex(
+        (task) => task.id === action.payload
+      );
+      state.todosList.splice(index, 1);
     },
   },
 });
