@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface Theme {
-  color: "dark" | "white";
+  color: "dark" | "light";
 }
 
 const initialState: Theme = {
-  color: "white",
+  color: "light",
 };
 
 export const themeSlice = createSlice({
@@ -14,7 +14,7 @@ export const themeSlice = createSlice({
   reducers: {
     switchTheme: (state) => {
       if (state.color === "dark") {
-        state.color = "white";
+        state.color = "light";
       } else {
         state.color = "dark";
       }

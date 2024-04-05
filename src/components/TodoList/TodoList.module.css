@@ -1,0 +1,35 @@
+.todoListWrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.button {
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--primary);
+  background: var(--secondary);
+  transition: all 0.3s;
+  width: 160px;
+  height: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 7px;
+}
+
+.button:hover {
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  transition: all 0.3s;
+}
+
+.input {
+  border-radius: 7px;
+  width: 340px;
+  font-size: 18px;
+  height: 45px;
+  background: var(--secondary);
+  color: var(--primary);
+  transition: all 0.3s;
+  text-align: center;
+}

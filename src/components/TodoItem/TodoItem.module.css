@@ -1,0 +1,43 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 45px;
+}
+
+.todoItemText {
+  border-radius: 7px;
+  width: 450px;
+  height: 45px;
+  background: var(--secondary);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoItemText {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  transition: all 0.3s;
+}
+
+.button {
+  height: 45px;
+  width: 50px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  background: var(--secondary);
+  transition: all 0.3s;
+  border: 2px solid var(--primary);
+}
+
+.button:hover {
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  transition: all 0.3s;
+}

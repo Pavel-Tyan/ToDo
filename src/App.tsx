@@ -14,7 +14,13 @@ function App() {
 
   return (
     <div className={styles.appWrapper}>
-      <button onClick={() => dispatch(themeActions.switchTheme())}>asd</button>
+      <button
+        className={styles.button}
+        onClick={() => dispatch(themeActions.switchTheme())}
+      >
+        {theme === "light" && "DRK"}
+        {theme === "dark" && "LHT"}
+      </button>
       <TodoList />
     </div>
   );
