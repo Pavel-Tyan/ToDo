@@ -1,0 +1,23 @@
+:root {
+  --green: #0ba989;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body[data-theme="dark"] {
+  --primary: #343131;
+  --secondary: #ffffff;
+}
+
+body[data-theme="light"] {
+  --primary: #ffffff;
+  --secondary: #343131;
+}
+
+.bg {
+  background: var(--primary);
+  height: 500px;
+  width: 500px;
+}
