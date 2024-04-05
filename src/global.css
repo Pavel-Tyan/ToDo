@@ -1,9 +1,14 @@
 :root {
   --green: #0ba989;
+  --light-green: #ace7db;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 body[data-theme="dark"] {
@@ -14,10 +19,4 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   --primary: #ffffff;
   --secondary: #343131;
-}
-
-.bg {
-  background: var(--primary);
-  height: 500px;
-  width: 500px;
 }
